@@ -1,0 +1,6 @@
+# SSH secret should not be committed
+base/ssh-secret.yaml
+
+# Backup files
+*.bak
+*.tmp
