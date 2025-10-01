@@ -1,7 +1,7 @@
 apiVersion: kubevirt.io/v1
 kind: VirtualMachine
 metadata:
-  name: vm-web-04
+  name: vm-web-03
   labels:
     app: web-server
     workshop: gitops-ocpvirt
@@ -12,7 +12,7 @@ spec:
   - apiVersion: cdi.kubevirt.io/v1beta1
     kind: DataVolumeTemplate
     metadata:
-      name: vm-web-04
+      name: vm-web-03
     spec:
       sourceRef:
         kind: DataSource
@@ -27,7 +27,7 @@ spec:
     metadata:
       labels:
         kubevirt.io/size: small
-        kubevirt.io/domain: vm-web-04
+        kubevirt.io/domain: vm-web-03
         app: web-server
     spec:
       domain:
@@ -60,7 +60,7 @@ spec:
       terminationGracePeriodSeconds: 180
       volumes:
       - dataVolume:
-          name: vm-web-04
+          name: vm-web-03
         name: rootdisk
       - cloudInitNoCloud:
           userData: |
