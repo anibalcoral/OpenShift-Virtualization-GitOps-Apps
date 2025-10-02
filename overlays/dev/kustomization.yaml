@@ -21,7 +21,7 @@ patches:
         value: dev-vm-web-service
       - op: add
         path: /spec/host
-        value: dev-workshop-vms.apps.cluster-9nknt.dynamic.redhatworkshops.io
+        value: dev-workshop-vms.apps.abe-simpson.chiarettolabs.com.br
     target:
       kind: Route
       name: vm-web-route
