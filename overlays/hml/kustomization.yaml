@@ -21,4 +21,3 @@ patches:
         value: hml-vm-web-service
       - op: add
         path: /spec/host
-        value: hml-workshop-gitops-vms.apps.cluster-9nknt.dynamic.redhatworkshops.io
