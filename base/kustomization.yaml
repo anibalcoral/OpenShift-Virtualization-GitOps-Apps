@@ -3,10 +3,6 @@ kind: Kustomization
 
 resources:
   - vm-web-09.yaml
-
-
-
-
   - ssh-secret.yaml
   - vm-web-01.yaml
   - vm-web-02.yaml
