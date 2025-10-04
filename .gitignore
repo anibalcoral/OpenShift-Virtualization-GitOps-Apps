@@ -1,4 +1,17 @@
-# SSH secret should not be committed
+# Ignore kustomize backup/temp files created by editors or scripts
+# Matches files like kustomization.yaml.77020.2025-10-04@13:36:31~
+kustomization.yaml.*
+
+# Ignore explicit bak files
+*.bak*
+
+# Editor swap/backup files
+*~
+.DS_Store
+*.swp
+
+# Optional: ignore local test outputs
+*.log# SSH secret should not be committed
 base/ssh-secret.yaml
 
 # Backup files
