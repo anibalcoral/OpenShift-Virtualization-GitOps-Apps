@@ -21,3 +21,6 @@ patches:
         value: hml-vm-web-service
       - op: add
         path: /spec/host
+    target:
+      kind: Route
+      name: vm-web-route
