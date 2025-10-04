@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
   - ../../base
 
-namespace: workshop-gitops-vms-prd
+namespace: workshop-vms-prd
 
 namePrefix: prd-
 

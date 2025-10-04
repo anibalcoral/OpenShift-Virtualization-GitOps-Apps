@@ -4,7 +4,7 @@ kind: Kustomization
 resources:
   - ../../base
 
-namespace: workshop-gitops-vms-hml
+namespace: workshop-vms-hml
 
 namePrefix: hml-
 
