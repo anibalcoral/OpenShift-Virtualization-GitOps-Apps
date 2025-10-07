@@ -21,7 +21,7 @@ patches:
         value: dev-vm-web-service
       - op: add
         path: /spec/host
-        value: dev-workshop-gitops-vms.apps.cluster-9nknt.dynamic.redhatworkshops.io
+        value: dev-workshop-gitops-vms.apps.cluster-9nknt.dynamic.redhatworkshops.ioo
     target:
       kind: Route
       name: vm-web-route
