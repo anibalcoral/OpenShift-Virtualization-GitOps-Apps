@@ -10,10 +10,34 @@ kustomization.yaml.*
 .DS_Store
 *.swp
 
-# Optional: ignore local test outputs
-*.log# SSH secret should not be committed
-base/ssh-secret.yaml
+# SSH secret with real keys should not be committed
+# The setup-ssh-key.yaml playbook will populate this file locally
+base/ssh-secret.yaml.generated
 
 # Backup files
-*.bak
 *.tmp
+*.temp
+
+# SSH keys and secrets
+*.key
+*.pem
+*.rsa
+id_rsa*
+id_ed25519*
+*.pub
+authorized_keys
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Log files
+*.log
+logs/
+
+# Ansible retry files
+*.retry
+
+# Generated files with timestamps
+*.[0-9]*.[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]@[0-9][0-9]:[0-9][0-9]:[0-9][0-9]~
