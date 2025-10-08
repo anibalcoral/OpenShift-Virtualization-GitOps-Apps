@@ -12,7 +12,7 @@ patches:
   - patch: |-
       - op: replace
         path: /spec/template/spec/accessCredentials/0/sshPublicKey/source/secret/secretName
-        value: hml-workshop-ssh-key
+        value: hml-workshop-ssh-public-key
     target:
       kind: VirtualMachine
   - patch: |-
