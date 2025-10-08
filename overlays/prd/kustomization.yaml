@@ -9,12 +9,7 @@ namespace: workshop-gitops-vms-prd
 namePrefix: prd-
 
 patches:
-  - patch: |-
-      - op: replace
-        path: /spec/template/spec/accessCredentials/0/sshPublicKey/source/secret/secretName
-        value: prd-workshop-ssh-public-key
-    target:
-      kind: VirtualMachine
+
   - patch: |-
       - op: replace
         path: /spec/to/name
