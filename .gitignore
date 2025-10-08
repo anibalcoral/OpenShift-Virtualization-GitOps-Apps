@@ -10,10 +10,6 @@ kustomization.yaml.*
 .DS_Store
 *.swp
 
-# SSH secret with real keys should not be committed
-# The setup-ssh-key.yaml playbook will populate this file locally
-base/ssh-secret.yaml.generated
-
 # Backup files
 *.tmp
 *.temp
