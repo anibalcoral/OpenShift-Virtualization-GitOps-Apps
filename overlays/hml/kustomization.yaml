@@ -16,7 +16,7 @@ patches:
         value: hml-vm-web-service
       - op: add
         path: /spec/host
-        value: hml-workshop-gitops-vms.apps.cluster-xzgv8.dynamic.redhatworkshops.io
+        value: hml-workshop-gitops-vms.apps.cluster-st22j.dynamic.redhatworkshops.io
     target:
       kind: Route
       name: vm-web-route
