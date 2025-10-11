@@ -7,7 +7,6 @@ This repository contains the Virtual Machine definitions and Kustomize configura
 ```
 ├── base/                           # Base VM templates and resources
 │   ├── kustomization.yaml         # Base Kustomize configuration
-│   ├── ssh-secret.yaml           # SSH secret template
 │   ├── vm-web-01.yaml            # Web server VM 01 definition
 │   ├── vm-web-02.yaml            # Web server VM 02 definition
 │   └── vm-web-service.yaml       # Service for VM access
