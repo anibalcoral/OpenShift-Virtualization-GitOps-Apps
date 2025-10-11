@@ -9,7 +9,15 @@ namespace: workshop-gitops-vms-hml
 namePrefix: hml-
 
 patches:
-
+  - patch: |-
+      - op: replace
+        path: /spec/template/spec/domain/resources/requests/memory
+        value: 2Gi
+      - op: replace  
+        path: /spec/template/spec/domain/cpu/cores
+        value: 1
+    target:
+      kind: VirtualMachine
   - patch: |-
       - op: replace
         path: /spec/to/name
