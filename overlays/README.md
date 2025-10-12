@@ -20,9 +20,9 @@ overlays/
 
 In a GitOps deployment, ArgoCD Applications point to one of these overlays to deploy the appropriate environment. Example ArgoCD application source paths:
 
-- `OpenShift-Virtualization-GitOps-Apps/overlays/dev` (vms-dev branch)
-- `OpenShift-Virtualization-GitOps-Apps/overlays/hml` (vms-hml branch)
-- `OpenShift-Virtualization-GitOps-Apps/overlays/prd` (main branch)
+- `OpenShift-Virtualization-GitOps-Apps/overlays/dev` (vms-dev-{guid} branch)
+- `OpenShift-Virtualization-GitOps-Apps/overlays/hml` (vms-hml-{guid} branch)
+- `OpenShift-Virtualization-GitOps-Apps/overlays/prd` (vms-prd-{guid} branch)
 
 Apply an overlay locally for testing:
 
