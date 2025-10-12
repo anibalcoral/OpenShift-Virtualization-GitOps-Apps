@@ -11,11 +11,11 @@ namePrefix: prd-
 patches:
   - patch: |-
       - op: replace
-        path: /spec/template/spec/domain/resources/requests/memory
-        value: 8Gi
-      - op: replace
         path: /spec/template/spec/domain/cpu/sockets  
         value: 4
+      - op: replace
+        path: /spec/template/spec/domain/resources/requests/memory
+        value: 8Gi
       - op: replace
         path: /spec/dataVolumeTemplates/0/spec/storage/resources/requests/storage
         value: 50Gi
