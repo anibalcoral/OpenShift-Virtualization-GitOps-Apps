@@ -23,9 +23,9 @@ This repository contains the Virtual Machine definitions and Kustomize configura
 
 The branches are created during the lab provisioning.
 
-- **vms-dev-{guid}**: Development virtual machines
-- **vms-hml-{guid}**: Homologation/Staging virtual machines  
-- **vms-prd-{guid}**: Production virtual machines
+- **vms-dev-GUID**: Development virtual machines
+- **vms-hml-GUID**: Homologation/Staging virtual machines  
+- **vms-prd-GUID**: Production virtual machines
 
 ## Virtual Machine Templates
 
@@ -39,8 +39,8 @@ All VMs are based on Fedora templates and include:
 
 This repository is used by ArgoCD Applications configured in the main OpenShift-Virtualization-GitOps repository. Each environment points to a different branch:
 
-- Development → vms-dev-{guid} branch
-- Homologation → vms-hml-{guid} branch  
-- Production → vms-prd-{guid} branch
+- Development → vms-dev-GUID branch
+- Homologation → vms-hml-GUID branch  
+- Production → vms-prd-GUID branch
 
-Changes should be made in the vms-dev-{guid} branch and promoted through merge requests to higher environments.
+Changes should be made in the vms-dev-GUID branch and promoted through merge requests to higher environments.
