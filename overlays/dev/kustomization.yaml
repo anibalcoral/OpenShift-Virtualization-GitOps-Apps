@@ -16,6 +16,9 @@ patches:
       - op: replace  
         path: /spec/template/spec/domain/cpu/sockets
         value: 1
+      - op: replace
+        path: /spec/dataVolumeTemplates/0/spec/storage/resources/requests/storage
+        value: 10Gi
     target:
       kind: VirtualMachine
   - patch: |-
@@ -28,4 +31,3 @@ patches:
     target:
       kind: Route
       name: vm-web-route
-

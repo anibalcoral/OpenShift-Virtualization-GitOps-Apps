@@ -16,6 +16,9 @@ patches:
       - op: replace  
         path: /spec/template/spec/domain/cpu/sockets
         value: 1
+      - op: replace
+        path: /spec/dataVolumeTemplates/0/spec/storage/resources/requests/storage
+        value: 20Gi
     target:
       kind: VirtualMachine
   - patch: |-
