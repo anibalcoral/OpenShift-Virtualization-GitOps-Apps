@@ -4,5 +4,4 @@ kind: Kustomization
 resources:
   - vm-web-01.yaml
   - vm-web-02.yaml
-  - vm-web-09.yaml
   - vm-web-service.yaml
