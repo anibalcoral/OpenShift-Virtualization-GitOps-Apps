@@ -7,7 +7,6 @@ metadata:
     workshop: gitops-ocpvirt
   annotations:
     workshop.gitops/config-version: "v4-fedora-firewall-fix"
-    workshop.gitops/demo4-timestamp: "20251103-223734"
 spec:
   dataVolumeTemplates:
   - apiVersion: cdi.kubevirt.io/v1beta1
